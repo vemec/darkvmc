@@ -3,7 +3,7 @@
 	@override-placeholders html, xml, css, php, js, php-html
 	@author Diego Ghersi [diego@ghersi.com.ar]
 	@web-site http://www.ghersi.com.ar
-	@version 0.1
+	@version 0.2
 */
 
 @base {
@@ -33,22 +33,19 @@ operator {
 }
 
 invalid {
-	color: #600;
-	background: rgba(150, 0, 0, .08);
+	color: #e92323;
 }
 
 /* @end */
 
 /* @group HTML */
 
-tag {
-	color: #91B3E0;
+entity.name, tag > name, tag {
+	color: #f2e769;
 }
 
-entity.name, tag > name {
-	color: #4B83CD;
-	background: #f5f5f5;
-	font-weight: normal;
+html .string.quoted {
+	color: #46f646;
 }
 
 /* Deprecated elements */
@@ -70,12 +67,11 @@ entity.character {
 }
 
 attribute-name {
-	color: #91B3E0;
-	font-style: italic;
+	color: #fb1bfb;
 }
 
 tag.doctype, tag.doctype entity.name {
-	color: #aaa;
+	color: #81fafd;
 }
 
 /* @end */
@@ -114,7 +110,7 @@ css keyword.important, keyword.important.css {
 	color: #ff3a3a;
 }
 
-css comment punctunation,
+css comment, css comment punctunation,
 css comment.block.css,
 css comment punctuation.begin,
 css comment punctuation.end {
