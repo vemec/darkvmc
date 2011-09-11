@@ -127,7 +127,7 @@ css .group-start .name, css group-start.comment.block.css, css group-end.comment
 }
 
 embedded.styling.css, embedded.property-list.css {
-	background: #EFE8F3;
+//	background: #EFE8F3;
 }
 
 /* @end */
@@ -135,7 +135,7 @@ embedded.styling.css, embedded.property-list.css {
 /* @group Javascript */
 
 js.embedded {
-	background: #EAEBE6;
+//	background: #EAEBE6;
 }
 
 js keyword.operator.new, js variable.language {
