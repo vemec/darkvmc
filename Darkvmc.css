@@ -139,7 +139,7 @@ js.embedded {
 }
 
 js keyword.operator.new, js variable.language {
-	color: #7a3e9d;
+	color: #ca86f2;
 }
 
 js meta, js parameters.begin, js parameters.end, js punctuation.terminator {
@@ -149,6 +149,21 @@ js meta, js parameters.begin, js parameters.end, js punctuation.terminator {
 js entity.name {
 	color: #333;
 	font-weight: bold;
+}
+
+js operator {
+	color: #ff2525;
+}
+
+js constant.numeric, js literal.numeric, js literal.character, js literal.keyword {
+	color: #fe174c;
+}
+
+js comment, js comment punctunation,
+js comment.block.js,
+js comment punctuation.begin,
+js comment punctuation.end {
+	color: #98fafd;
 }
 
 /* @end */
