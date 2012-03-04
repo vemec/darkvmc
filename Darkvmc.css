@@ -3,16 +3,16 @@
 	@override-placeholders html, xml, css, php, js, php-html
 	@author Diego Ghersi [diego@ghersi.com.ar]
 	@web-site http://www.ghersi.com.ar
-	@version 0.2
+	@version 0.5
 */
 
 @base {
-    color: #E0E0E0;
+    color: #f4f4f4;
     background-color: #1c1c1a;
     insertion-point-color: #FF0000;
     selection-background-color: #706040;
     current-line-background-color: #000;
-} 
+}
 
 * { spell-check: disabled; }
 
@@ -77,15 +77,13 @@ tag.doctype, tag.doctype entity.name {
 /* @end */
  
 /* @group CSS */
-
 css { spell-check: disabled; }
 
 css constant.numeric, css literal.numeric, css literal.character, css literal.keyword {
 	color: #fb1bfb;
 }
 
-css punctuation { color: #81fafd;
-}
+css punctuation { color: #81fafd; }
 
 css property-value > punctuation.separator.css,
 css property-value > punctuation.terminator.rule.css {
@@ -93,17 +91,11 @@ css property-value > punctuation.terminator.rule.css {
 	font-weight: 800;
 }
 
-css > property-name {
-	color: #46f646;
-}
+css > property-name { color: #46f646; }
 
-css property-value, css string.quoted {
-	color: #ff3a3a;
-}
+css property-value, css string.quoted { color: #ff3a3a; }
 
-css.selector, css.selector > entity > punctuation {
-	color: #f2e769;
-}
+css.selector, css.selector > entity > punctuation { color: #f2e769; }
 
 css keyword.important, keyword.important.css {
 	font-weight: bold;
@@ -117,9 +109,7 @@ css comment punctuation.end {
 	color: #98fafd;
 }
 
-css color, css punctuation.definition.constant {
-	color: #fb1bfb;
-}
+css color, css punctuation.definition.constant { color: #fb1bfb; }
 
 css .group-start .name, css group-start.comment.block.css, css group-end.comment.block.css {
 	color: #98fafd;
@@ -127,27 +117,35 @@ css .group-start .name, css group-start.comment.block.css, css group-end.comment
 }
 
 embedded.styling.css, embedded.property-list.css {
-//	background: #EFE8F3;
+	background-color: rgba(26, 29, 38, 0.97);
 }
 
 /* @end */
-
 /* @group Javascript */
-
 js.embedded {
-//	background: #EAEBE6;
+	background-color: rgba(26, 29, 38, 0.97);
+}
+
+js > string.quoted {
+	color: #ff3a3a;
+}
+
+js storage.type {
+	color: #45a8ec;
+	font-weight: bold;
 }
 
 js keyword.operator.new, js variable.language {
-	color: #ca86f2;
+	color: #45a8ec;
+	font-weight: bold;
 }
 
 js meta, js parameters.begin, js parameters.end, js punctuation.terminator {
-	color: #777;
+	color: #efefef;
 }
 
 js entity.name {
-	color: #333;
+	color: #ffffff;
 	font-weight: bold;
 }
 
@@ -165,9 +163,7 @@ js comment punctuation.begin,
 js comment punctuation.end {
 	color: #98fafd;
 }
-
 /* @end */
-
 /* @group PHP */
 
 php delimiter.source, php delimiter.source > keyword.definition, php punctuation {
@@ -259,7 +255,6 @@ php class.static property.name {
 }
 
 /* @end */
-
 /* @group Bash */
 
 bash identifier.function {
